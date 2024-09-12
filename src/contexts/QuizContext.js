@@ -14,6 +14,8 @@ const initialState={
   }
   const optionArr=["A","B","C","D"];
   
+  const apiUrl = process.env.REACT_APP_API_URL;
+
 function QuestionProvider({children}){
     
     function reducer(curState,action){
@@ -53,7 +55,8 @@ const {status,questionsData:questions,currentIndex,currentID,currentQuestion,ans
     useEffect(function(){
       async function getQuestionsData(){
         try{
-          const res=await fetch("http://localhost:8090/quizzes")
+          // const res=await fetch("http://localhost:8090/quizzes")
+          const res=await fetch(`${apiUrl}/quizzes`)
           const data=await res.json();
           dispatch({type:"question",payload:data})
           console.log(data);
@@ -69,7 +72,8 @@ const {status,questionsData:questions,currentIndex,currentID,currentQuestion,ans
     useEffect(function(){
       async function getCurrentData(id){
         try{
-            const res=await fetch(`http://localhost:8090/quizzes/${id}`)
+            // const res=await fetch(`http://localhost:8090/quizzes/${id}`)
+            const res=await fetch(`${apiUrl}/quizzes/${id}`)
             const data=await res.json();
             dispatch({type:"currentQuestion",payload:data})
             console.log(data);

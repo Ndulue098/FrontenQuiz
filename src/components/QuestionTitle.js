@@ -5,9 +5,11 @@ export default function QuestionTitle({question}) {
     function handleGetID(id){ 
         dispatch({type:"currentId",payload:id})
       }
-    
+    console.log(question.icon);
+     
+
       return <li onClick={(()=>handleGetID(question.id))} >
-      <img className="acc" src={`${question.icon}`} alt="accessible" />
+      <img className="acc" src={`${question.icon}`} alt="acc" />
       <code>{question.title}</code>
     </li>
 }
