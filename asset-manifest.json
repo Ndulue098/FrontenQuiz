@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/FrontenQuiz/static/css/main.ebc28e5e.css",
+    "main.js": "/FrontenQuiz/static/js/main.3f519b14.js",
+    "index.html": "/FrontenQuiz/index.html",
+    "static/media/pattern-background-desktop-dark.svg": "/FrontenQuiz/static/media/pattern-background-desktop-dark.e211d976d5b431130f82.svg",
+    "static/media/pattern-background-desktop-light.svg": "/FrontenQuiz/static/media/pattern-background-desktop-light.d8d38901bd02457d3784.svg",
+    "static/media/pattern-background-mobile-light.svg": "/FrontenQuiz/static/media/pattern-background-mobile-light.2a1f70bd700b2be97b86.svg",
+    "static/media/pattern-background-tablet-light.svg": "/FrontenQuiz/static/media/pattern-background-tablet-light.72e6cda6148dc11584fb.svg",
+    "main.ebc28e5e.css.map": "/FrontenQuiz/static/css/main.ebc28e5e.css.map",
+    "main.3f519b14.js.map": "/FrontenQuiz/static/js/main.3f519b14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebc28e5e.css",
+    "static/js/main.3f519b14.js"
+  ]
+}
