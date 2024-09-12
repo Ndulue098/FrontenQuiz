@@ -1,0 +1,14 @@
+import { useQuestion } from "../contexts/QuizContext"
+
+export default function QuestionTitle({question}) {
+  const {dispatch}=useQuestion()
+    function handleGetID(id){ 
+        dispatch({type:"currentId",payload:id})
+      }
+    
+      return <li onClick={(()=>handleGetID(question.id))} >
+      <img className="acc" src={`${question.icon}`} alt="accessible" />
+      <code>{question.title}</code>
+    </li>
+}
+
